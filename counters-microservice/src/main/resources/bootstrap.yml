@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: docker
+---
+spring:
+  profiles: docker
+  application:
+    name: counters
+#  cloud:
+#    config:
+#      uri: http://configserver:8888
+#      enabled: false
+encrypt:
+  failOnError: false

@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: docker
+---
+spring:
+  profiles: docker
+server:
+  port: 9000
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    preferIpAddress: true
